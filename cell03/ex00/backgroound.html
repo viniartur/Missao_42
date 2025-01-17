@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar Cor de Fundo</title>
+    <link rel="stylesheet" href="backgroound.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+<button onclick="mudarCor()">Mudar Cor de Fundo</button>
+
+<script>
+        function mudarCor() {
+            const corAleatoria = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.body.style.backgroundColor = corAleatoria;
+        }
+</script>
+
+</body>
+</html>
